@@ -11,7 +11,7 @@
   },
   "devDependencies": {
       "redis": "*"
-  }
+  },
   "repository": {
     "type": "git",
     "url": "git://github.com/guileen/node-rts.git"
