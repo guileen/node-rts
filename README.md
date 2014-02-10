@@ -1,11 +1,9 @@
 rts
 ===
 
+[![Build Status](https://travis-ci.org/guileen/node-rts.png?branch=master)](https://travis-ci.org/guileen/node-rts)
+
 Redis time series data store
-
-Start rtsd service first
-
-    rtsd -p 6379 -h 127.0.0.1 -g '1s, 5m, 1h, 1d, 1M' --points 10000 --aggrgran='1y'
 
 ## Init
 
@@ -17,10 +15,6 @@ var rts = require('rts')(options);
             points: 500,
             prefix: ''
         });
-
-Or, you can specify a namespace by prefix.
-
-    var foorts = require('rts')(redis, 'foo_');
 
 ## Record
 
@@ -53,5 +47,4 @@ ts.avg('delay', '5m', fromDate, \[toDate\], callback)
 ts.max('delay', '5m', fromDate, \[toDate\], callback)
 ts.min('delay', '5m', fromDate, \[toDate\], callback)
 
-ts.hours('consume', 'yyyy')
-ts.days('consume', 'yyyy')
+ts.aggravg(name, aggr, date, callback)

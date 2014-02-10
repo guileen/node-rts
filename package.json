@@ -9,6 +9,9 @@
   "scripts": {
     "test": "node test/test.js"
   },
+  "devDependencies": {
+      "redis": "*"
+  }
   "repository": {
     "type": "git",
     "url": "git://github.com/guileen/node-rts.git"
