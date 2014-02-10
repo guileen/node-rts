@@ -1,0 +1,27 @@
+{
+  "name": "rts",
+  "version": "0.1.0",
+  "description": "Redis storage for timeseries data.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "node test/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/guileen/node-rts.git"
+  },
+  "keywords": [
+    "redis",
+    "timeseries",
+    "statistics"
+  ],
+  "author": "Jason Gui",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/guileen/node-rts/issues"
+  },
+  "homepage": "https://github.com/guileen/node-rts"
+}
