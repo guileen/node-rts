@@ -28,7 +28,6 @@ var timer = setInterval(function() {
     record(t, 'delay', Math.random() * 100, ['min', 'max', 'avg']);
     record(t, 'consume', Math.random() * 1000, ['avg', 'min', 'max', 'sum'], ['dy', 'hq']);
 }, 10);
-timer.unref();
 
 setTimeout(function() {
         rts.sum('click', '5m', from, from + H,  _log('click 5m'));
@@ -37,6 +36,7 @@ setTimeout(function() {
         rts.max('delay', '1w', from, from + 365 * D, _log('delay 1w max'));
         rts.aggrmin('consume', 'dy', from, _log('consume dy'));
         rts.aggravg('consume', 'hq', from, _log('consume hq'));
+        clearInterval(timer);
         client.unref();
 }, 1000);
 
