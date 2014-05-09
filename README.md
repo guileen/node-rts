@@ -62,6 +62,7 @@ ts.record('delay', 100, ['avg','max','min'])
 ```
 
 ## Query
+#### ts.stat(statistic, behavior, granularity, fromDate, toDate, callback)
 #### ts\[statistic\](behavior, granularity, fromDate, toDate, callback)
 #### ts.aggr{statistic}(behavior, aggragation, date, callback)
 * `statistic`  `sum`, `avg`, `count`, `max`, `min`. Must be a member when statistics when `record`!

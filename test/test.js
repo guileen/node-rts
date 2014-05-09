@@ -25,7 +25,7 @@ function _log(message) {
 var timer = setInterval(function() {
     t += Math.random() * H;
     record(t, 'click');
-    record(t, 'delay', Math.random() * 100, ['min', 'max', 'avg']);
+    record(t, 'delay', Math.random() * 101, ['min', 'max', 'avg']);
     record(t, 'consume', Math.random() * 1000, ['avg', 'min', 'max', 'sum'], ['dy', 'hq']);
 }, 10);
 
