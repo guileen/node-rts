@@ -31,6 +31,8 @@ var timer = setInterval(function() {
 
 setTimeout(function() {
         rts.sum('click', '5m', from, from + H,  _log('click 5m'));
+        // even not store, also can get, but zero results;
+        rts.sum('click', '8m', from, from + H,  _log('click 8m'));
         rts.sum('click', '1d', from, from + 30 * D, _log('click 1d'));
         rts.avg('delay', '1h', from, from + 24 * H, _log('delay 1h avg'));
         rts.max('delay', '1w', from, from + 365 * D, _log('delay 1w max'));
