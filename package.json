@@ -1,6 +1,6 @@
 {
   "name": "rts",
-  "version": "0.2.3",
+  "version": "0.3.0",
   "description": "Redis storage for timeseries data.",
   "main": "index.js",
   "directories": {
@@ -10,7 +10,7 @@
     "test": "node test/test.js"
   },
   "devDependencies": {
-      "redis": "*"
+      "redis": "git://github.com/guileen/node_redis#support-2.8.9"
   },
   "repository": {
     "type": "git",
