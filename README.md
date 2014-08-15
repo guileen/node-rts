@@ -80,3 +80,8 @@ ts.min('delay', '5m', fromDate, \[toDate\], callback)
 
 ts.aggravg('click', 'hm', date, callback)
 ```
+
+## Others
+
+#### ts.writePoint(name, stat, value, gran, timestamp, callback)
+#### ts.getTimePeriord(gran, points)
