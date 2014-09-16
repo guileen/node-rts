@@ -1,6 +1,6 @@
 {
   "name": "rts",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "description": "Redis storage for timeseries data.",
   "main": "index.js",
   "directories": {
