@@ -62,7 +62,7 @@ ts.record('delay', 100, ['avg','max','min'])
 ```
 
 ## Query
-#### ts.stat(statistic, behavior, granularity, fromDate, toDate, callback)
+#### ts.getStat(statistic, behavior, granularity, fromDate, toDate, callback)
 #### ts\[statistic\](behavior, granularity, fromDate, toDate, callback)
 #### ts.aggr{statistic}(behavior, aggragation, date, callback)
 * `statistic`  `sum`, `avg`, `count`, `max`, `min`. Must be a member when statistics when `record`!
@@ -83,5 +83,5 @@ ts.aggravg('click', 'hm', date, callback)
 
 ## Others
 
-#### ts.writePoint(name, stat, value, gran, timestamp, callback)
+#### ts.setValue(name, stat, value, gran, timestamp, callback)
 #### ts.getTimePeriord(gran, points)
