@@ -1,7 +1,7 @@
 rts
 ===
 
-[![Build Status](https://travis-ci.org/guileen/node-rts.png?branch=master)](https://travis-ci.org/guileen/node-rts)
+[![Build Status](https://travis-ci.org/guileen/node-rts.svg?branch=master)](https://travis-ci.org/guileen/node-rts)
 
 Use redis as time series data store.
 
