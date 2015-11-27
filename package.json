@@ -10,7 +10,7 @@
     "test": "node test/test.js"
   },
   "devDependencies": {
-    "redis": "^2.4.1"
+    "redis": "2"
   },
   "repository": {
     "type": "git",
