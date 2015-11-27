@@ -26,7 +26,7 @@ function _log(message) {
         console.log(message, err, results);
     }
 }
-
+setTimeout(function() {
 // var timer = setInterval(function() {
     for(var i=0;i<1000;i++) {
       t += Math.random() * 60 * 1000;
@@ -36,6 +36,7 @@ function _log(message) {
       record(t, 'consume', Math.random() * 1000, ['avg', 'min', 'max', 'sum'], ['dy', 'hq']);
     }
 // }, 10);
+}, 100);
 
 setTimeout(function() {
         rts.unique('access', '5m', from, from + 5* H, _log('access 5m'));
@@ -50,6 +51,7 @@ setTimeout(function() {
         rts.aggrmin('consume', 'dy', from, _log('consume dy'));
         rts.aggravg('consume', 'hq', from, _log('consume hq'));
         // clearInterval(timer);
-        // client.unref();
-}, 2000);
+        rts.stop()
+        client.unref()
+}, 1000);
 
